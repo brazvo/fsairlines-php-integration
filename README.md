@@ -29,7 +29,7 @@ Then add to your **composer.json** dependencies:
 ```json
 {
     "require": {
-        "brazvo/fsairlines-php-integration": "^0.1.0"
+        "brazvo/fsairlines-php-integration": "^0.2.0"
     }
 }
 ```
@@ -81,7 +81,7 @@ $connector = new \FSAirlinesPhpIntegration\Connector(
 ```
 
 To achieve **virtual_airline_access_token**, see documentation at https://wiki.fsairlines.net/index.php/XML-Interface-v2#Access_Restriction  
-To achieve **virtual_airline_id**, you have to login to FSAirlines Crew Center and the ID is right behind you VA name in square brackets - VA NAME[12345] at the top of the page.
+To achieve **virtual_airline_id**, you have to login to FSAirlines Crew Center and the ID is right behind your VA name in square brackets - VA NAME[12345] at the top of the page.
 
 When the connector is created and initialized just call operations as needed and proceed data.
 (See bellow for Operation List.)
@@ -139,7 +139,7 @@ $stringXmlData = $response->getBody();
 
 ## RECOMMENDATION
 
-**The number of requests per hour and per day are limited, so I strongly recommend to use any kind of cache to temporarily store static data (such as aircrafts or pilots) and proceed "real" requests to the FSAirlines API in some time intervals.**  
+**The number of requests per hour and per day is limited, so I strongly recommend to use any kind of cache to temporarily store static data (such as aircrafts or pilots) and proceed "real" requests to the FSAirlines API in some time intervals.**  
 (Some examples how to cache data: https://www.web-development-blog.com/why-should-you-cache-your-php-website/)
 
 <br>

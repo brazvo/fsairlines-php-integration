@@ -78,7 +78,6 @@ class OperationLoader
             $this->connector->getApiUrl(),
             $this->connector->getApiKey(),
             $this->connector->getAirlineId(),
-            $this->connector->getPilotId(),
             $this->connector->isRawData(),
             $this->connector->getRawDataFormat()
         );
