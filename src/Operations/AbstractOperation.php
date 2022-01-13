@@ -36,7 +36,6 @@ abstract class AbstractOperation
      * @param $apiUrl
      * @param $apiToken
      * @param $airlineId
-     * @param $pilotId
      * @param $rawData
      * @param $rawDataFormat
      */
@@ -44,7 +43,6 @@ abstract class AbstractOperation
         $apiUrl,
         $apiToken,
         $airlineId,
-        $pilotId,
         $rawData,
         $rawDataFormat
     ) {
@@ -53,9 +51,6 @@ abstract class AbstractOperation
         $this->getParams['format'] = !$rawData ? 'json' : $rawDataFormat;
         $this->getParams['apikey'] = $apiToken;
         $this->getParams['va_id'] = $airlineId;
-        if ($pilotId) {
-            $this->getParams['pilot_id'] = $pilotId;
-        }
     }
 
     protected function invokeMe() {
