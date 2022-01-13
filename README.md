@@ -29,7 +29,7 @@ Then add to your **composer.json** dependencies:
 ```json
 {
     "require": {
-        "brazvo/fsairlines-php-integration": "^0.2.0"
+        "brazvo/fsairlines-php-integration": "^0.3.0"
     }
 }
 ```
